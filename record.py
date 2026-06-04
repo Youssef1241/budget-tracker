@@ -13,5 +13,3 @@ class Record(SQLModel, table=True):
     def from_raw(cls, raw_data: dict)-> "Record":
         return cls(**raw_data)
 
-engine = create_engine("sqlite:///records.db")
-SQLModel.metadata.create_all(engine)
