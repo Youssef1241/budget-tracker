@@ -8,9 +8,18 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "pydantic (>=2.13.4,<3.0.0)",
+    "sqlmodel (>=0.0.38,<0.0.39)",
+    "streamlit (>=1.58.0,<2.0.0)",
+    "plotly (>=6.8.0,<7.0.0)",
+    "pandas (>=3.0.3,<4.0.0)"
 ]
 
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^7.2.0"
+

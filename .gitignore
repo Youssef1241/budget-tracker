@@ -1,1 +1,5 @@
 .directory
+records.db
+test.ipynb
+__pycache__
+main.py
